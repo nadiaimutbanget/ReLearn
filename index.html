@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ReLearn - Home</title>
 <style>
+  /* Sembunyikan semua halaman materi di awal */
+#matematika, #english, #kimia {
+  display: none;
+}
+
+/* Trik CSS: Munculkan halaman HANYA saat tombol 'Masuk' diklik */
+#matematika:target, #english:target, #kimia:target {
+  display: block;
+}
 html{ scroll-behavior:smooth; }
 *{ margin:0; padding:0; box-sizing:border-box; font-family:Arial; }
 body{ background:#e5e7eb; }
